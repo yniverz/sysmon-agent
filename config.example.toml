@@ -1,2 +1,3 @@
-url="ws://server.domain:8765"
-interval=10
+system-identifier = "Machine-1" # Unique identifier for this machine
+url="ws://server.domain:8765" # WebSocket server URL
+interval=10 # seconds (optional, default is 10 seconds)
