@@ -49,8 +49,12 @@ The installer will:
 A sample file is provided as **`config.example.toml`**:
 
 ```toml
-url      = "ws://server.domain:8765"  # WebSocket server
-interval = 10                         # seconds (float)
+# Unique identifier for this machine
+system-identifier =  "Machine-1"
+# WebSocket server URL
+url               =  "wss://server.domain/ws"
+# seconds (optional, default is 10 seconds)
+interval          =  10 
 ```
 
 After install the file is copied to `/opt/sysmon-agent/config.toml`.
