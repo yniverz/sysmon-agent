@@ -1,3 +1,4 @@
 system-identifier = "Machine-1" # Unique identifier for this machine
 url="wss://server.domain/ws" # WebSocket server URL
+key="SECRET_KEY" # secret key
 interval=10 # seconds (optional, default is 10 seconds)

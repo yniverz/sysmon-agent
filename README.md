@@ -53,6 +53,8 @@ A sample file is provided as **`config.example.toml`**:
 system-identifier =  "Machine-1"
 # WebSocket server URL
 url               =  "wss://server.domain/ws"
+# Server/System Key for authentication
+key               =  "SECRET_KEY"
 # seconds (optional, default is 10 seconds)
 interval          =  10 
 ```
