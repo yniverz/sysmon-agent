@@ -233,8 +233,8 @@ async def transmit(system_id: str, uri: str, interval: float) -> None:  # noqa: 
 # ---------------------------------------------------------------------------
 
 def main() -> None:  # noqa: D401 – imperative mood OK
-    # sys_id, url, interval = load_config()
-    sys_id, url, interval = "test", "ws://localhost:8765", 10.0
+    sys_id, url, interval = load_config()
+    # sys_id, url, interval = "test", "ws://localhost:8765", 10.0
     print(f"Using system_id={sys_id!r}, url={url!r}, interval={interval}s from config.")
     try:
         asyncio.run(transmit(sys_id, url, interval))
