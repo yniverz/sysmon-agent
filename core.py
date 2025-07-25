@@ -367,7 +367,7 @@ async def transmit(uri: str, interval: float) -> None:  # noqa: D401 – imperat
                 await asyncio.gather(send_task, receive_task)
 
         except (websockets.InvalidURI, websockets.InvalidHandshake) as cfg_err:
-            raise SystemExit(f"WebSocket configuration error: {cfg_err}")
+            raise Exception(f"WebSocket configuration error: {cfg_err}")
         except Exception as conn_err:  # covers disconnects, timeouts, etc.
             print(f"Connection lost ({conn_err!s}); retrying in {reconnect_delay}s …")
             await asyncio.sleep(reconnect_delay)
